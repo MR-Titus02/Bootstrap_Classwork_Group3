@@ -7,38 +7,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-
-    <div>Alert</div>
-    <!-- Button -->
+    <h1>Hello</h1>
+    <div>Jumbotron</div>
     <div>
-
-        <h1 class="text-center">Jumbotron</h1>
-        <div class="mt-4 p-5 bg-success text-white rounded text-center">
-            <h1>Jumbotron Example</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur . Ex, totam praesentium dignissimos amet vitae, illo soluta earum doloremque deserunt magnam facilis dolore culpa commodi possimus.</p>
-          </div>
-          
-
-        <h1 class="text-center">BUTTONS</h1>
-        <button type="button" class="btn btn-warning">start</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-outline-secondary">Submit</button>
-        <button class="btn btn-primary" disabled>
-            <span class="spinner-border spinner-border-sm"></span>
-            Loading..
-          </button>
-          <button type="button" class="btn btn-primary" disabled>Disabled Primary</button><br><br>
-          <div class="d-grid">
-            <button type="button" class="btn btn-primary btn-block">welcome</button>
-          </div><br>
-          <button type="button" class="btn btn-primary btn-lg">Large</button>
-          <button type="button" class="btn btn-primary btn-sm">Small</button>
-          <button type="button" class="btn btn-outline-danger">Danger</button>
-          <button class="btn btn-primary" disabled>
-            <span class="spinner-grow spinner-grow-sm"></span>
-            Loading..
-          </button>
+        <h1> Alerts
+        </h1>
     </div>
+    <p> <strong>A Bootstrap alert is a component in the Bootstrap framework used to display messages or notifications to users. It provides contextual feedback messages, such as success, error, warning, or informational messages.</strong></p>
+
+    <p> <b>Example :</b></p>
+    <div class="alert alert-secondary" role="alert">
+        This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+      </div>
+      <div class="alert alert-danger" role="alert">
+        This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+      </div>
+    
+    <h4> 1.Additional content</h4>
+
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+      <h4> 2.Dismissing</h4>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div>Buttons</div>
     <div>Spinner</div>
     <div>Icons</div>
     <div>Progress bar</div>

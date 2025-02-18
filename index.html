@@ -1,230 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Bootstrap_Classwork_Group3</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap_Classwork_Group3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  hr {
+    border: 3px solid red;
+  }
+</style>
 </head>
+
 <body>
-
+<!-- Alerts -->
   <div>
-    <h1> Alerts
-    </h1>
-</div>
-<p> <strong>A Bootstrap alert is a component in the Bootstrap framework used to display messages or notifications to users. It provides contextual feedback messages, such as success, error, warning, or informational messages.</strong></p>
+    <h1 class="text-center"> Alerts</h1>
+  </div>
+  <p> <strong>A Bootstrap alert is a component in the Bootstrap framework used to display messages or notifications to
+      users. It provides contextual feedback messages, such as success, error, warning, or informational
+      messages.</strong></p>
 
-<p> <b>Example :</b></p>
-<div class="alert alert-secondary" role="alert">
+  <p> <b>Example :</b></p>
+  <div class="alert alert-secondary" role="alert">
     This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
   </div>
   <div class="alert alert-danger" role="alert">
     This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
   </div>
 
-<h4> 1.Additional content</h4>
+  <h4> 1.Additional content</h4>
 
-<div class="alert alert-success" role="alert">
+  <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Well done!</h4>
-    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-    <hr>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+      that you can see how spacing within an alert works with this kind of content.</p>
     <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-</div>
+  </div>
   <h4> 2.Dismissing</h4>
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+<hr>
+<h1 class="text-center" >Spinner</h1>
+  <!-- Spinner -->
+  <div>
+    <h3>Border Spinner</h3>
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
 
+    </div>
+    <div class="spinner-border text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
 
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
 
-    <div>Buttons</div>
-    <!-- Spinner -->
+  <div class="spinner-border text-light" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+
+  <div>
+    <h3>Growing Spinner</h3>
+  </div>
+  <div class="spinner-grow text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-secondary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-light" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-dark" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div>
+    <h3>Buttons</h3><button class="btn btn-primary" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      <span class="sr-only">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Loading...
+    </button>
+  </div><button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    <span class="sr-only">Loading...</span>
+  </button>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    Loading...
+  </button></div>
+  </div>
+
+<!-- JUmbotron -->
+  <div>
+
+    <h1 class="text-center">Jumbotron</h1>
+    <div class="mt-4 p-5 bg-success text-white rounded text-center">
+      <h1>Jumbotron Example</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur . Ex, totam praesentium dignissimos amet vitae, illo soluta earum
+        doloremque deserunt magnam facilis dolore culpa commodi possimus.</p>
+    </div>
+
+    <!-- Button -->
+    <h1 class="text-center">BUTTONS</h1>
+    <button type="button" class="btn btn-warning">start</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-outline-secondary">Submit</button>
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button><br><br>
+    <div class="d-grid">
+      <button type="button" class="btn btn-primary btn-block">welcome</button>
+    </div><br>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-grow spinner-grow-sm"></span>
+      Loading..
+    </button>
+  </div>
+  <!-- Icons -->
+  <div>
+    <h1 class="text-center">Icons</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes"
+      viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+      <path
+        d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+    </svg>
+    <i class="bi bi-airplane-fill"></i>
+    <p>
     <div>
-        <h3>Border Spinner</h3><div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-secondary" role="status">
-        <span class="sr-only">Loading...</span>
-
-      </div>
-      <div class="spinner-border text-success" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-danger" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-warning" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-info" role="status">
-        <span class="sr-only">Loading...</span>
+      <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i>Primary</button><br>
+      <button type="button" class="btn btn-secondary"> <i class="bi bi-postage-heart">button</i></button>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+          aria-describedby="basic-addon1">
       </div>
 
-      </div>
-      <div class="spinner-border text-success" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-danger" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-warning" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-info" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+          aria-describedby="basic-addon2">
+        <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i>Primary</button><br>
+        <button type="button" class="btn btn-secondary"> <i class="bi bi-postage-heart">button</i></button>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
 
-      <div class="spinner-border text-light" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-border text-dark" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
 
-      <div><h3>Growing Spinner</h3></div>
-      <div class="spinner-grow text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-secondary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-success" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-danger" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-warning" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-info" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-light" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow text-dark" role="status">
-        <span class="sr-only">Loading...</span>
-      </div> 
-    <div><h3>Buttons</h3><button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        <span class="sr-only">Loading...</span>
-      </button>
-      <button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        Loading...
-      </button></div><button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        <span class="sr-only">Loading...</span>
-      </button>
-      <button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        Loading...
-      </button></div>
+
+        </div>
+      </div>>
+      <span class="input-group-text" id="basic-addon2">@example.com</span>
+
+
     </div>
-
-  
-    <div>
-
-        <h1 class="text-center">Jumbotron</h1>
-        <div class="mt-4 p-5 bg-success text-white rounded text-center">
-            <h1>Jumbotron Example</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur . Ex, totam praesentium dignissimos amet vitae, illo soluta earum doloremque deserunt magnam facilis dolore culpa commodi possimus.</p>
-          </div>
-          
-  <!-- Button -->
-        <h1 class="text-center">BUTTONS</h1>
-        <button type="button" class="btn btn-warning">start</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-outline-secondary">Submit</button>
-        <button class="btn btn-primary" disabled>
-            <span class="spinner-border spinner-border-sm"></span>
-            Loading..
-          </button>
-          <button type="button" class="btn btn-primary" disabled>Disabled Primary</button><br><br>
-          <div class="d-grid">
-            <button type="button" class="btn btn-primary btn-block">welcome</button>
-          </div><br>
-          <button type="button" class="btn btn-primary btn-lg">Large</button>
-          <button type="button" class="btn btn-primary btn-sm">Small</button>
-          <button type="button" class="btn btn-outline-danger">Danger</button>
-          <button class="btn btn-primary" disabled>
-            <span class="spinner-grow spinner-grow-sm"></span>
-            Loading..
-          </button>
-    </div>
-    <div>
-        <h1>Icons</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/></svg>
-        <i class="bi bi-airplane-fill"></i>
-        <p>
-            <div>
-            <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i>Primary</button><br>
-            <button type="button" class="btn btn-secondary">   <i class="bi bi-postage-heart">button</i></button>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i>Primary</button><br>
-                    <button type="button" class="btn btn-secondary">   <i class="bi bi-postage-heart">button</i></button>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                      
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-        
-        
-                            </div>
-                          </div>>
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
-
-
-                    </div>
-                  </div>
-
-
-
-
-              </div>
-              
-            
-                </div>
-                
-              </div>
-        </p>
-    </div>
-
-    <div>Icons</div>
-
-<h1>Progress Bar</h1>
-   <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-    </div>
-    <h5>1. Change the Width</h5>
-    <div class="progress-bar" style="width: 50%;">50%</div>
-<h5>2. Add Background Color</h5>
-<div class="progress-bar bg-success" style="width: 75%;">75%</div>
-<h5>3. Striped Progress Bar</h5>
-<div class="progress-bar progress-bar-striped" style="width: 50%;">50%</div>
-<h5>4. Animated Progress Bar
-</h5>
-<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
-<h5>5. Multiple Progress Bars</h5>
-<div class="progress">
-  <div class="progress-bar bg-success" style="width: 40%;">40%</div>
-  <div class="progress-bar bg-warning" style="width: 30%;">30%</div>
-  <div class="progress-bar bg-danger" style="width: 20%;">20%</div>
-</div>
+  </div>
+<!-- Progress Bar -->
+  <h1 class="text-center">Progress Bar</h1>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100">25%</div>
+  </div>
+  <h5>1. Change the Width</h5>
+  <div class="progress-bar" style="width: 50%;">50%</div>
+  <h5>2. Add Background Color</h5>
+  <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+  <h5>3. Striped Progress Bar</h5>
+  <div class="progress-bar progress-bar-striped" style="width: 50%;">50%</div>
+  <h5>4. Animated Progress Bar
+  </h5>
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
+  <h5>5. Multiple Progress Bars</h5>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+    <div class="progress-bar bg-warning" style="width: 30%;">30%</div>
+    <div class="progress-bar bg-danger" style="width: 20%;">20%</div>
+  </div>
 </body>
+
 </html>
